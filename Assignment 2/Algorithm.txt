@@ -1,0 +1,79 @@
+1. Single_Linked_List Class Implementation:
+    - Define a Node class to represent items in the linked list.
+    - Implement the Single_Linked_List class with the data members: head, tail, and num_items.
+    
+2. Employee Abstract Class & Derived Classes:
+    - Define the Employee abstract class.
+    - Implement the Professional and Nonprofessional derived classes.
+
+3. Testing & Documentation:
+    - Write a main function to test the implemented classes.
+    - Document the code and write the readme file.
+
+------------------------------------------------------------------------------------------------
+
+1. Single_Linked_List Class Implementation:
+
+1.1. Node Class:
+    - Define a private nested class 'Node' with:
+        - Data member 'data' of type 'Item_Type'.
+        - Pointer 'next' of type 'Node*'.
+        - Constructor to initialize 'data' and 'next'.
+
+1.2. Single_Linked_List Class:
+    - Data members:
+        - 'head': Pointer to the first node.
+        - 'tail': Pointer to the last node.
+        - 'num_items': Int for number of items.
+
+    - Member functions:
+        - 'push_front': Add a node at the beginning.
+        - 'push_back': Add a node at the end.
+        - 'pop_front': Remove the first node.
+        - 'pop_back': Remove the last node.
+        - 'front': Return the data of the first node.
+        - 'back': Return the data of the last node.
+        - 'empty': Return true if the list is empty, false otherwise.
+        - 'insert': Add a node at a given index.
+        - 'remove': Remove a node at a given index.
+        - 'find': Find the index of the first occurrence of a given item.
+
+2. Employee Abstract Class & Derived Classes:
+
+2.1 Employee Abstract Class:
+    - Data members:
+        - 'name'
+        - 'id'
+        - Other attributes...
+
+    - Pure virtual functions:
+        - 'calculate_weekly_salary'
+            - hours worked * hourly rate
+        - 'compute_health_care_contributions'
+        - 'compute_vacation_days'
+    
+2.2. Professional Derived Class:
+    - Data members specific to a professional employee:
+        - 'monthly_salary'
+        - 'number_of_vacation_days'
+    - Implement the pure virtual functions from the base class.
+    
+2.3. Nonprofessional Derived Class:
+    - Data members specific to a nonprofessional employee:
+        - 'hourly_rate'
+        - 'hours_worked'
+    - Implement the pure virtual functions from the base class.
+
+3. Testing & Documentation:
+
+3.1. Main Function for Testing:
+    - Test all methods of teh 'Single_Linked_List' class.
+    - Create instances of 'Professional' and 'Nonprofessional' employees and test their methods.
+
+3.2. Documentation & README:
+    - Comment each calss and function with an explanation
+    - Write a README to explain:
+        - Program purpose
+        - Overview of classes and methods
+        - Instructions on how to run the code
+
